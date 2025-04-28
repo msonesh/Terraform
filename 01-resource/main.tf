@@ -31,4 +31,7 @@ resource "azurerm_virtual_machine" "devops" {
     admin_password = "Devsecops@2020"
   }
 
+  os_profile_linux_config {
+    disable_password_authentication = false
+  }
 }
