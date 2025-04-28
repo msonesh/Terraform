@@ -17,7 +17,7 @@ resource "azurerm_virtual_machine" "test" {
   # delete_data_disks_on_termination = true
 
   storage_image_reference {
-    id   = "/subscriptions/c214e6c4-51a0-4409-90ba-e1e4ac5d4ede/resourceGroups/RG-Test/providers/Microsoft.Compute/virtualMachines/image"
+    id   = "/subscriptions/c214e6c4-51a0-4409-90ba-e1e4ac5d4ede/resourceGroups/RG-Test/providers/Microsoft.Compute/images/image-test"
   }
   storage_os_disk {
     name              = "devops-vm-disk"
