@@ -3,7 +3,7 @@ provider "azurerm" {
    subscription_id = "c214e6c4-51a0-4409-90ba-e1e4ac5d4ede"
 }
 
-resource "azurerm_virtual_machine" "devops" {
+resource "azurerm_virtual_machine" "test" {
   name                  = "devops-vm"
   location              = "UK West"
   resource_group_name   = "RG-Test"
