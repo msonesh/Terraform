@@ -20,7 +20,7 @@ resource "azurerm_virtual_machine" "devops" {
     id   = "/subscriptions/c214e6c4-51a0-4409-90ba-e1e4ac5d4ede/resourceGroups/RG-Test/providers/Microsoft.Compute/virtualMachines/image"
   }
   storage_os_disk {
-    name              = "devops-vm"
+    name              = "devops-vm-disk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
     managed_disk_type = "Standard_LRS"
