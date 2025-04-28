@@ -8,7 +8,7 @@ resource "azurerm_virtual_machine" "devops" {
   location              = "UK West"
   resource_group_name   = "RG-Test"
   network_interface_ids = ["/subscriptions/c214e6c4-51a0-4409-90ba-e1e4ac5d4ede/resourceGroups/RG-Test/providers/Microsoft.Network/networkInterfaces/devops-ni"]
-  vm_size               = "Standard D2s v3"
+  vm_size               = "Standard_B2s"
 
   # Uncomment this line to delete the OS disk automatically when deleting the VM
   delete_os_disk_on_termination = true
